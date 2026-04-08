@@ -3,22 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NightCast — Know When to Look Up</title>
-    <meta
-      name="description"
-      content="Visibility scores for meteor showers, eclipses, ISS passes, auroras, and 20+ celestial events. Free for Android."
-    />
-    <meta property="og:title" content="NightCast — Know When to Look Up" />
-    <meta
-      property="og:description"
-      content="Visibility scores for meteor showers, eclipses, and more. Your personal guide to the night sky."
-    />
+    <title>NightCast — Sky Events Guide</title>
+    <meta name="description" content="NightCast gives you personalized visibility scores for meteor showers, eclipses, ISS passes, auroras, conjunctions, and 20+ celestial events. Free stargazing app for Android." />
+    <meta name="keywords" content="stargazing app, meteor shower tonight, eclipse tracker, ISS pass tracker, night sky app, aurora alerts, astronomy app, star gazing guide, celestial events, sky events, visibility score, light pollution map, when to stargaze, tonight sky events, free astronomy app, Android stargazing" />
+    <meta name="author" content="NightCast" />
+    <meta name="theme-color" content="#040810" />
+    <link rel="canonical" href="https://nightcast.app/" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/og-image.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="NightCast — Sky Events Guide" />
+    <meta property="og:description" content="Personalized visibility scores for meteor showers, eclipses, ISS passes, auroras, and 20+ celestial events. Know when to look up." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://nightcast.app" />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔭</text></svg>"
-    />
+    <meta property="og:image" content="https://nightcast.app/og-image.png" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="1024" />
+    <meta property="og:site_name" content="NightCast" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="NightCast — Sky Events Guide" />
+    <meta name="twitter:description" content="Personalized visibility scores for meteor showers, eclipses, ISS passes, auroras, and 20+ celestial events." />
+    <meta name="twitter:image" content="https://nightcast.app/og-image.png" />
+
+    <!-- App linking -->
+    <meta name="google-play-app" content="app-id=com.nightcast.app" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "NightCast",
+      "alternateName": "NightCast — Sky Events Guide",
+      "description": "Personalized visibility scores for meteor showers, eclipses, ISS passes, auroras, and 20+ celestial events. Your stargazing guide.",
+      "url": "https://nightcast.app",
+      "applicationCategory": "LifestyleApplication",
+      "operatingSystem": "Android",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "installUrl": "https://play.google.com/store/apps/details?id=com.nightcast.app",
+      "screenshot": "https://nightcast.app/og-image.png",
+      "author": {
+        "@type": "Organization",
+        "name": "NightCast"
+      }
+    }
+    </script>
+
     <style>
       * {
         margin: 0;
@@ -42,56 +82,16 @@
         right: 0;
         bottom: 0;
         background:
-          radial-gradient(
-            1px 1px at 20% 30%,
-            rgba(184, 195, 255, 0.4),
-            transparent
-          ),
-          radial-gradient(
-            1px 1px at 40% 70%,
-            rgba(184, 195, 255, 0.3),
-            transparent
-          ),
-          radial-gradient(
-            1px 1px at 60% 20%,
-            rgba(184, 195, 255, 0.5),
-            transparent
-          ),
-          radial-gradient(
-            1px 1px at 80% 60%,
-            rgba(184, 195, 255, 0.2),
-            transparent
-          ),
-          radial-gradient(
-            2px 2px at 10% 80%,
-            rgba(184, 195, 255, 0.4),
-            transparent
-          ),
-          radial-gradient(
-            1px 1px at 70% 40%,
-            rgba(184, 195, 255, 0.3),
-            transparent
-          ),
-          radial-gradient(
-            1px 1px at 90% 10%,
-            rgba(184, 195, 255, 0.5),
-            transparent
-          ),
-          radial-gradient(
-            1px 1px at 50% 90%,
-            rgba(184, 195, 255, 0.2),
-            transparent
-          ),
-          radial-gradient(
-            2px 2px at 30% 50%,
-            rgba(184, 195, 255, 0.3),
-            transparent
-          ),
-          radial-gradient(
-            1px 1px at 15% 15%,
-            rgba(184, 195, 255, 0.4),
-            transparent
-          );
+          radial-gradient(1px 1px at 20% 30%, rgba(184, 195, 255, 0.4), transparent),
+          radial-gradient(1px 1px at 40% 70%, rgba(184, 195, 255, 0.3), transparent),
+          radial-gradient(1px 1px at 60% 20%, rgba(184, 195, 255, 0.5), transparent),
+          radial-gradient(1px 1px at 80% 60%, rgba(184, 195, 255, 0.2), transparent),
+          radial-gradient(2px 2px at 10% 80%, rgba(184, 195, 255, 0.4), transparent),
+          radial-gradient(1px 1px at 70% 40%, rgba(184, 195, 255, 0.3), transparent),
+          radial-gradient(1px 1px at 90% 10%, rgba(184, 195, 255, 0.5), transparent),
+          radial-gradient(1px 1px at 50% 90%, rgba(184, 195, 255, 0.2), transparent),
+          radial-gradient(2px 2px at 30% 50%, rgba(184, 195, 255, 0.3), transparent),
+          radial-gradient(1px 1px at 15% 15%, rgba(184, 195, 255, 0.4), transparent);
         pointer-events: none;
         z-index: 0;
       }
@@ -112,11 +112,19 @@
         padding: 24px 0;
       }
       .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
         font-size: 14px;
         font-weight: 700;
         letter-spacing: 4px;
         color: #b8c3ff;
         text-decoration: none;
+      }
+      .brand img {
+        width: 28px;
+        height: 28px;
+        border-radius: 6px;
       }
       .nav-links {
         display: flex;
@@ -175,9 +183,7 @@
         padding: 16px 32px;
         border-radius: 100px;
         text-decoration: none;
-        transition:
-          transform 0.2s,
-          box-shadow 0.2s;
+        transition: transform 0.2s, box-shadow 0.2s;
       }
       .cta-btn:hover {
         transform: translateY(-2px);
@@ -254,8 +260,18 @@
         line-height: 1.5;
       }
       .feature-icon {
-        font-size: 24px;
+        width: 36px;
+        height: 36px;
+        border-radius: 10px;
+        background: rgba(184, 195, 255, 0.08);
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin-bottom: 12px;
+      }
+      .feature-icon svg {
+        width: 20px;
+        height: 20px;
       }
 
       /* Events list */
@@ -325,7 +341,10 @@
 
     <div class="container">
       <nav>
-        <a href="/" class="brand">NIGHTCAST</a>
+        <a href="/" class="brand">
+          <img src="/favicon.png" alt="NightCast icon" width="28" height="28" />
+          NIGHTCAST
+        </a>
         <div class="nav-links">
           <a href="/privacy">Privacy</a>
           <a href="/terms">Terms</a>
@@ -336,24 +355,23 @@
         <div class="hero-badge">FREE ON ANDROID</div>
         <h1>Know When to <br /><span>Look Up.</span></h1>
         <p class="hero-sub">
-          Visibility scores for meteor showers, eclipses, ISS passes, auroras,
-          and 20+ celestial events — personalized to your exact location.
+          Personalized visibility scores for meteor showers, eclipses, ISS passes,
+          auroras, and 20+ celestial events — tailored to your exact location and sky conditions.
         </p>
         <a
           href="https://play.google.com/store/apps/details?id=com.nightcast.app"
           class="cta-btn"
+          aria-label="Download NightCast on Google Play"
         >
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 010 1.38l-2.302 2.302L15.396 13l2.302-2.492zM5.864 2.658L16.8 9.99l-2.302 2.302L5.864 2.658z"
-            />
+            <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 010 1.38l-2.302 2.302L15.396 13l2.302-2.492zM5.864 2.658L16.8 9.99l-2.302 2.302L5.864 2.658z" />
           </svg>
           Get it on Google Play
         </a>
       </section>
 
       <section class="score-section">
-        <div class="score-ring">8</div>
+        <div class="score-ring" aria-label="Visibility score 8 out of 10">8</div>
         <div class="score-label">VISIBILITY SCORE</div>
         <p class="score-desc">
           We combine sky quality, real-time weather, and light pollution into
@@ -365,15 +383,19 @@
         <h2>WHAT YOU GET</h2>
         <div class="feature-grid">
           <div class="feature-card">
-            <div class="feature-icon">🌠</div>
-            <h3>All 20 Event Types</h3>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#b8c3ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h3>All 20+ Event Types</h3>
             <p>
               Meteor showers, eclipses, ISS passes, auroras, comets,
-              conjunctions, and more.
+              conjunctions, planets, and more.
             </p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">📍</div>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#b8c3ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
             <h3>Location-Aware</h3>
             <p>
               Scores calculated for your exact position. See what's visible from
@@ -381,7 +403,9 @@
             </p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">🧭</div>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#b8c3ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16.24 7.76l-2.12 6.36-6.36 2.12 2.12-6.36z"/></svg>
+            </div>
             <h3>Where to Look</h3>
             <p>
               Compass direction and altitude for every event. Point yourself the
@@ -389,7 +413,9 @@
             </p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">🔔</div>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#b8c3ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+            </div>
             <h3>Smart Alerts</h3>
             <p>
               Get notified before events that meet your visibility threshold.
@@ -429,6 +455,7 @@
         <a
           href="https://play.google.com/store/apps/details?id=com.nightcast.app"
           class="cta-btn"
+          aria-label="Download NightCast on Google Play"
         >
           Download NightCast
         </a>
@@ -438,6 +465,7 @@
         <div>
           <a href="/privacy">Privacy Policy</a>
           <a href="/terms">Terms of Service</a>
+          <a href="/delete-account">Delete Account</a>
           <a href="mailto:support@nightcast.app">Contact</a>
         </div>
         <p class="copyright">&copy; 2026 NightCast. All rights reserved.</p>
