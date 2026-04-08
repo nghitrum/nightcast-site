@@ -1,0 +1,21 @@
+{
+  "name": "NightCast",
+  "short_name": "NightCast",
+  "description": "Sky Events Guide — personalized visibility scores for meteor showers, eclipses, ISS passes, auroras, and 20+ celestial events.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#040810",
+  "theme_color": "#040810",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/og-image.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ]
+}
