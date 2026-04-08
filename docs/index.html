@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NightCast — Sky Events Guide</title>
-    <meta name="description" content="NightCast gives you personalized visibility scores for meteor showers, eclipses, ISS passes, auroras, conjunctions, and 20+ celestial events. Free stargazing app for Android." />
+    <meta name="description" content="NightCast gives you personalized visibility scores for meteor showers, eclipses, ISS passes, auroras, conjunctions, and 20+ celestial events. Free stargazing app for Android. iOS coming soon." />
     <meta name="keywords" content="stargazing app, meteor shower tonight, eclipse tracker, ISS pass tracker, night sky app, aurora alerts, astronomy app, star gazing guide, celestial events, sky events, visibility score, light pollution map, when to stargaze, tonight sky events, free astronomy app, Android stargazing" />
     <meta name="author" content="NightCast" />
     <meta name="theme-color" content="#040810" />
@@ -115,7 +115,7 @@
         display: flex;
         align-items: center;
         gap: 10px;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 700;
         letter-spacing: 4px;
         color: #b8c3ff;
@@ -131,7 +131,7 @@
         gap: 24px;
       }
       .nav-links a {
-        font-size: 14px;
+        font-size: 16px;
         color: #8a90a4;
         text-decoration: none;
         transition: color 0.2s;
@@ -166,7 +166,7 @@
         color: #b8c3ff;
       }
       .hero-sub {
-        font-size: 18px;
+        font-size: 20px;
         color: #8a90a4;
         line-height: 1.6;
         max-width: 480px;
@@ -178,7 +178,7 @@
         gap: 10px;
         background: #b8c3ff;
         color: #040810;
-        font-size: 15px;
+        font-size: 17px;
         font-weight: 700;
         padding: 16px 32px;
         border-radius: 100px;
@@ -188,6 +188,11 @@
       .cta-btn:hover {
         transform: translateY(-2px);
         box-shadow: 0 8px 32px rgba(184, 195, 255, 0.25);
+      }
+      .hero-ios {
+        font-size: 15px;
+        color: #8a90a4;
+        margin-top: 16px;
       }
 
       /* Score demo */
@@ -210,13 +215,13 @@
         color: #10b981;
       }
       .score-label {
-        font-size: 10px;
+        font-size: 12px;
         font-weight: 700;
         letter-spacing: 3px;
         color: #8a90a4;
       }
       .score-desc {
-        font-size: 15px;
+        font-size: 17px;
         color: #8a90a4;
         margin-top: 16px;
         line-height: 1.6;
@@ -227,7 +232,7 @@
         padding: 60px 0;
       }
       .features h2 {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 700;
         letter-spacing: 2px;
         color: #8a90a4;
@@ -250,12 +255,12 @@
         border: 1px solid rgba(184, 195, 255, 0.08);
       }
       .feature-card h3 {
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 600;
         margin-bottom: 6px;
       }
       .feature-card p {
-        font-size: 13px;
+        font-size: 15px;
         color: #8a90a4;
         line-height: 1.5;
       }
@@ -279,7 +284,7 @@
         padding: 40px 0;
       }
       .events-section h2 {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 700;
         letter-spacing: 2px;
         color: #8a90a4;
@@ -291,7 +296,7 @@
         gap: 8px;
       }
       .event-tag {
-        font-size: 13px;
+        font-size: 15px;
         color: #b8c3ff;
         background: rgba(184, 195, 255, 0.08);
         padding: 6px 14px;
@@ -305,7 +310,7 @@
         border-top: 1px solid rgba(184, 195, 255, 0.06);
       }
       .footer-cta h2 {
-        font-size: 28px;
+        font-size: 32px;
         font-weight: 700;
         margin-bottom: 12px;
       }
@@ -321,16 +326,17 @@
         border-top: 1px solid rgba(184, 195, 255, 0.06);
       }
       footer a {
-        font-size: 13px;
+        font-size: 15px;
         color: #8a90a4;
         text-decoration: none;
         margin: 0 12px;
+        white-space: nowrap;
       }
       footer a:hover {
         color: #e8ecf4;
       }
       .copyright {
-        font-size: 12px;
+        font-size: 14px;
         color: #555b6e;
         margin-top: 16px;
       }
@@ -352,7 +358,7 @@
       </nav>
 
       <section class="hero">
-        <div class="hero-badge">FREE ON ANDROID</div>
+        <div class="hero-badge">FREE ON ANDROID &middot; iOS COMING SOON</div>
         <h1>Know When to <br /><span>Look Up.</span></h1>
         <p class="hero-sub">
           Personalized visibility scores for meteor showers, eclipses, ISS passes,
@@ -368,6 +374,7 @@
           </svg>
           Get it on Google Play
         </a>
+        <p class="hero-ios">iOS coming soon</p>
       </section>
 
       <section class="score-section">
@@ -457,8 +464,12 @@
           class="cta-btn"
           aria-label="Download NightCast on Google Play"
         >
-          Download NightCast
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 010 1.38l-2.302 2.302L15.396 13l2.302-2.492zM5.864 2.658L16.8 9.99l-2.302 2.302L5.864 2.658z" />
+          </svg>
+          Get it on Google Play
         </a>
+        <p class="hero-ios">iOS coming soon</p>
       </section>
 
       <footer>
